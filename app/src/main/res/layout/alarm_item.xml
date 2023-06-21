@@ -2,31 +2,42 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width = "150dp"
-    android:layout_height = "150dp"
-    android:layout_centerInParent = "true"
-    android:foregroundGravity = "center"
-    app:cardElevation = "16dp"
-    app:cardCornerRadius = "160dp"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:layout_centerInParent="true"
+    android:foregroundGravity="center"
+    app:cardElevation="16dp"
+    app:cardCornerRadius="160dp"
     android:layout_margin="14dp"
     android:id="@+id/alarmCardView">
+
+    <!-- Nuevo TextView para mostrar el nombre de la alarma -->
+    <TextView
+        android:id="@+id/alarmName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Alarm Name"
+        android:textSize="16sp"
+        android:textColor="@android:color/black" />
 
     <TextView
         android:id="@+id/selectedTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|top"
-        android:layout_marginTop="24dp"
-        android:gravity="top"
-        android:text="8:45"
-        android:textSize="20sp" />
+        android:layout_marginTop="48dp" />
+
+
     <TextView
         android:id="@+id/differenceTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="ring ing "
+        android:text="Ring in..."
         android:visibility="invisible"
         android:textSize="14sp" />
 
