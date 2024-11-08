@@ -12,16 +12,16 @@
     android:id="@+id/alarmCardView">
 
 
-<TextView
-android:id="@+id/alarmName"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_gravity="center_horizontal|top"
-android:layout_marginTop="12dp"
-android:gravity="center"
-android:text="@string/alarm_name"
-android:textSize="16sp"
-android:textColor="@android:color/black" />
+    <TextView
+        android:id="@+id/alarmName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="@string/alarm_name"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
 
 <TextView
 android:id="@+id/selectedTime"
