@@ -48,5 +48,6 @@
     <string name="ring_in">Ring in...</string>
     <string name="logo_desc">App logo</string>
     <string name="pill_desc">Medication icon</string>
+    <string name="logo">Logo de la aplicación</string>
 
 </resources>
