@@ -38,8 +38,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Configuración del título de la barra de acción
-        supportActionBar?.title = "MedicHealth(Rx)"
+        // Configurar el Action Bar personalizado
+        supportActionBar?.setDisplayShowCustomEnabled(true)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
+        supportActionBar?.setCustomView(R.layout.custom_action_bar)
 
         val application = requireNotNull(this).application
         val dao = AlarmDatabase.getInstance(application).alarmDao

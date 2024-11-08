@@ -12,39 +12,50 @@
     android:id="@+id/alarmCardView">
 
 
+    <ImageView
+        android:id="@+id/pillImageView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/pastillas"
+    android:contentDescription="@string/pill_desc" />
+
+    <!-- Nombre de la alarma -->
     <TextView
         android:id="@+id/alarmName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|top"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="40dp"
+    android:gravity="center"
+    android:text="@string/alarm_name"
+    android:textColor="@android:color/black"
+    android:textSize="16sp" />
+
+    <!-- Hora de la alarma -->
+    <TextView
+        android:id="@+id/selectedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="72dp" />
+
+    <TextView
+        android:id="@+id/differenceTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:gravity="center"
-        android:text="@string/alarm_name"
-        android:textColor="@android:color/black"
-        android:textSize="16sp" />
+        android:text="@string/ring_in"
+        android:visibility="invisible"
+        android:textSize="14sp" />
 
-<TextView
-android:id="@+id/selectedTime"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_gravity="center|top"
-android:layout_marginTop="48dp" />
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/alarmSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:checked="false" />
 
-<TextView
-android:id="@+id/differenceTime"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_gravity="center"
-android:gravity="center"
-android:text="@string/ring_in"
-android:visibility="invisible"
-android:textSize="14sp" />
-
-<androidx.appcompat.widget.SwitchCompat
-android:id="@+id/alarmSwitch"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_gravity="center|bottom"
-android:checked="false" />
-
-    </androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>

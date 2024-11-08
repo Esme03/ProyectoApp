@@ -7,6 +7,7 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
+
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
@@ -45,4 +46,7 @@
     </string>
     <string name="alarm_name">Alarm Name</string>
     <string name="ring_in">Ring in...</string>
+    <string name="logo_desc">App logo</string>
+    <string name="pill_desc">Medication icon</string>
+
 </resources>

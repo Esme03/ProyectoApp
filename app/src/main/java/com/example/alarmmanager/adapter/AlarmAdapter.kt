@@ -30,10 +30,11 @@ class AlarmAdapter(private val context: Context, private val alarms: List<Alarm>
         var runnable: Runnable? = null
         val alarm = alarms[position]
 
-        // Mostrar el nombre de la alarma
+        // Mostrar el nombre de la alarma y la hora
         holder.alarmName.text = alarm.name
-
         holder.hour.text = "${alarm.hour} : ${alarm.minute} ${alarm.state}"
+
+        // Configurar el interruptor y la diferencia de tiempo
         if (alarm.checked) {
             holder.switch.isChecked = true
             holder.differenceTime.visibility = View.VISIBLE
@@ -71,6 +72,9 @@ class AlarmAdapter(private val context: Context, private val alarms: List<Alarm>
             }
         }
 
+        // Configuración de la imagen de "pastillas"
+        holder.pillImageView.setImageResource(R.drawable.pastillas) // Asegúrate de que el archivo se llama "pastillas" y está en res/drawable
+
         // Cambiar color de fondo según posición
         when (position % 3) {
             0 -> holder.alarmCardView.setCardBackgroundColor(ContextCompat.getColor(context, R.color.firstColor))
@@ -88,6 +92,7 @@ class AlarmAdapter(private val context: Context, private val alarms: List<Alarm>
         val switch = binding.alarmSwitch
         val differenceTime = binding.differenceTime
         val alarmCardView = binding.alarmCardView
+        val pillImageView = binding.pillImageView // Referencia a la imagen "pastillas"
     }
 
     @RequiresApi(Build.VERSION_CODES.N)
