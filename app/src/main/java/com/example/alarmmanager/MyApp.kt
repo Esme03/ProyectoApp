@@ -16,7 +16,7 @@ class MyApp : Application() {
     private fun createNotificationChannel() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channel = NotificationChannel(
-               AlarmReceiver.CHANNEL_ID,
+                AlarmReceiver.CHANNEL_ID,
                 "Alarm Manager",
                 NotificationManager.IMPORTANCE_DEFAULT
             )
