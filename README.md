@@ -35,3 +35,4 @@ This is an Android app that allows users to set alarms using Room, Kotlin Corout
 ## Contributing
 
 If you would like to contribute to this project, please fork the repository and submit a pull request.
+//tenemos que uitar este readme
