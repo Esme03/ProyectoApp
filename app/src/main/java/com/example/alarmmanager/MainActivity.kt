@@ -38,6 +38,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Configuración del título de la barra de acción
+        supportActionBar?.title = "MedicHealth(Rx)"
+
         val application = requireNotNull(this).application
         val dao = AlarmDatabase.getInstance(application).alarmDao
         viewModelFactory = AlarmFactory(dao)
