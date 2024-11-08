@@ -21,7 +21,7 @@ abstract class AlarmDatabase : RoomDatabase(){
                 if(instance == null) {
                     instance = Room.databaseBuilder(
                         context.applicationContext,
-                       AlarmDatabase::class.java,
+                        AlarmDatabase::class.java,
                         "alarm_database"
                     ).build()
                     INSTANCE = instance

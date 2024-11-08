@@ -20,7 +20,6 @@ import com.example.alarmmanager.MainActivity
 import com.example.alarmmanager.MusicControl
 import com.example.alarmmanager.R
 
-@Suppress("DEPRECATION")
 class AlarmReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context?, intent1: Intent?) {
 
@@ -48,7 +47,7 @@ class AlarmReceiver : BroadcastReceiver() {
             FLAG_IMMUTABLE or FLAG_UPDATE_CURRENT
         )
 
-        val builder = NotificationCompat.Builder(context, CHANNEL_ID)
+        val builder = NotificationCompat.Builder(context!!, CHANNEL_ID)
             .setSmallIcon(R.drawable.ic_launcher_background)
             .setContentTitle("Alarm Manager")
             .setContentText("try using alarm manager")
